@@ -1,0 +1,144 @@
+body {
+    margin: 0px;
+    background-color:#000;
+}
+#container2 {
+    margin: 0 auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+#container3 {
+    margin: 0 auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+}
+#container4 {
+    margin: 0 auto;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+}
+#container2 img {
+    width: 100%;
+}
+#container3 img {
+    width: 100%;
+}
+#container4 img {
+    width: 100%;
+}
+a {
+    color:#fff;
+    text-decoration: none;
+}
+span a {
+    color:#000;
+    text-decoration: none;
+}
+@media only screen and (max-width:600px) {
+    #container2 {
+        grid-template-columns: 100%;
+    }
+    #container3 {
+        grid-template-columns: 100%;
+    }
+    #container4 {
+        grid-template-columns: 100%;
+        width:95%;
+    }
+}
+
+.container {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center; /* Align items vertically in the container */
+    justify-content: space-between; /* Space out children to the start and end */
+}
+.image-container {
+    flex: 1; /* Allows the image container to take available space */
+}
+.image-container img {
+    max-width: 80%;
+    margin: 0; /* Remove margin to align left */
+    display: block; /* Ensure image is displayed as a block element */
+}
+.icons-container {
+    display: flex;
+    align-items: center; /* Center icons vertically */
+}
+.icons-container span {
+    font-size: 3em;
+    color: #000;
+    margin-right: 10px;
+}
+.navbar {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align:center;
+    margin-top:20px;
+}
+.nav {
+    margin:10px;
+    width: 15px;
+    height: 15px;
+    padding:1vw;
+    border-radius: 25px;
+    text-indent: -999em;
+    overflow: hidden;
+}
+.navNext {
+    background:url("/img/NEXT.png") top left no-repeat;
+    background-color:#444;
+    background-size:contain;
+}
+.navPrev {
+    background:url("/img/PREV.png") top left no-repeat;
+    background-color:#444;
+    background-size:contain;
+}
+.navFirst {
+    background:url("/img/FIRST.png") top left no-repeat;
+    background-color:#444;
+    background-size:contain;
+}
+.navLast {
+    background:url("/img/LAST.png") top left no-repeat;
+    background-color:#444;
+    background-size:contain;
+}
+.navFirst:hover,.navPrev:hover,.navNext:hover,.navLast:hover {
+    background-color: #888;
+}
+.parent-container {
+    text-align:center;
+}
+.share-bar {
+    display: inline-flex;
+    background-color: #bbb;
+    background: linear-gradient(to bottom, #e0e0e0, #555555); /* Lighter to darker gradient */
+    justify-content: center;
+    margin: 20px auto; /* Center horizontally and add vertical margins */
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px; /* Adjust the value as needed for the roundness */
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:22px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+.share-bar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    margin: 0 5px;
+}
+.share-bar a:hover {
+    color: #fff;
+}
